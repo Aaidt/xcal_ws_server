@@ -8,7 +8,7 @@ const wss = new WebSocketServer({ port: 8080 })
 
 interface data {
   type: "join_room" | "leave_room" | "chat" | "visitor_count",
-  link?: string,
+  link: string,
   shape?: string,
   roomId: string
 }
