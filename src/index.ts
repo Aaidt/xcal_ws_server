@@ -66,7 +66,6 @@ wss.on("connection", async function connect(ws, request) {
 
    const queryParams = new URLSearchParams(url.split("?")[1]);
    const token = queryParams.get('token') ?? "";
-   console.log(token)
 
    const userId = await verifyClerkToken(token);
    if (userId === null || !userId) {
