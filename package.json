@@ -7,6 +7,9 @@
     "dev": "tsc -b && node ./dist/index.js",
     "start": "node ./dist/index.js"
   },
+  "prisma": {
+    "schema": "./src/prisma/schema.prisma"
+  },
   "devDependencies": {
     "typescript": "^5.9.2"
   },
@@ -15,6 +18,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@clerk/backend": "^2.13.0",
     "@prisma/client": "6.15.0",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/ws": "^8.18.1",
