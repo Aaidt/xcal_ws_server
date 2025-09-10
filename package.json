@@ -7,9 +7,12 @@
     "dev": "tsc -b && node ./dist/index.js",
     "start": "node ./dist/index.js"
   },
-  "prisma": {
-    "schema": "./src/prisma/schema.prisma"
-  },
+<<<<<<< HEAD
+=======
+"prisma":{
+"schema": "src/prisma/schema.prisma"
+},
+>>>>>>> 30a5b632e84a66fc4e42d7d48af4d68047ea7d8d
   "devDependencies": {
     "typescript": "^5.9.2"
   },
